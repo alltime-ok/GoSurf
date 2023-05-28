@@ -3,13 +3,23 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
+  background: #171919;
+  text-transform: uppercase;
 }
 
-.suptitle-left {
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+.headline-left {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
-  text-transform: uppercase;
   color: #ffffff;
   opacity: 0.5;
   padding-left: 103px;
@@ -23,5 +33,81 @@ body {
     background-color: #ffffff;
     left: 0;
     top: 50%;
+  }
+}
+
+.title {
+  span {
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(#ffffff, 0.02);
+    position: relative;
+    // left: -50px;
+    display: inline-block;
+    transform: translateX(-50px);
+  }
+  h3 {
+    font-size: 80px;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      top: 0;
+      right: 0;
+      background-color: $green;
+    }
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  padding-right: 80px;
+  &_head {
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  span {
+    padding: 17px 57px 15px 17px;
+    background-color: $green;
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: #ffffff;
+      top: 50%;
+      left: -10px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 21px;
+      background-image: url(../images/src/arrow-right.svg);
+      right: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

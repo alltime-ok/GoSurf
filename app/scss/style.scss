@@ -25,8 +25,6 @@
   right: 80px;
   bottom: 116px;
   text-align: right;
-  //   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .slider-item_info-suptext {
@@ -41,7 +39,6 @@
   font-size: 80px;
   margin-bottom: 48px;
   line-height: 86px;
-  //   color: #ffffff;
 }
 
 .slider-item_info-text {
@@ -63,13 +60,12 @@
   right: 130px;
 }
 
-.slider-dots {
+.slider-dotshead {
   position: absolute;
   right: 60px;
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  color: #ffffff;
   .slick-current {
     .dots-box {
       border-top: 4px solid $green;
@@ -89,12 +85,12 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 34px;
-    text-transform: uppercase;
   }
 
   &_name {
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -111,7 +107,6 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
   max-width: 467px;
   opacity: 0.07;
   position: absolute;
@@ -123,7 +118,6 @@
 .menu {
   padding-top: 40px;
   a {
-    color: #ffffff;
     span {
       display: block;
       font-weight: 500;
@@ -131,6 +125,7 @@
       line-height: 14px;
       padding-top: 6px;
       margin-bottom: 20px;
+      text-transform: capitalize;
     }
   }
 }
@@ -166,6 +161,7 @@
   letter-spacing: 1.05px;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before {
     position: absolute;
     content: "";
@@ -199,6 +195,269 @@
 @keyframes animdash {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+.surf,
+.travel,
+.sleep,
+.shop {
+  padding: 160px 0 210px;
+}
+
+.surf {
+  background-image: url(../images/surf-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 200px;
+  background-size: auto;
+}
+
+.surf_subtitle {
+  text-align: right;
+  margin-top: -85px;
+}
+.surf-slider {
+  padding-top: 110px;
+  .slider-arrows {
+    top: 50px;
+    opacity: 0.25;
+  }
+
+  .slick-slide:nth-child(4n + 1) {
+    .surf-box {
+      margin-top: 32px;
+    }
+  }
+  .slick-slide:nth-child(4n + 3) {
+    .surf-box {
+      margin-top: 89px;
+    }
+  }
+  .slick-current {
+    .surf-box-inner_btn {
+      display: block;
+    }
+    .surf-box_inner {
+      background-color: rgba(#1c2121, 0.3);
+    }
+  }
+}
+
+.surf-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  &_inner {
+    min-height: 750px;
+    background-color: rgba(#1c2121, 0.85);
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      background-color: rgba(#1c2121, 0.3);
+      .surf-box-inner_btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.surf-box_inner-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  padding: 72px 0 0 40px;
+  width: 140px;
+}
+
+.surf-box_inner-location {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 8px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+  width: 0;
+  height: 0;
+  white-space: nowrap;
+  span {
+    font-weight: 100;
+  }
+}
+.surf-box-inner_btn {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.slider-map {
+  max-width: 1200px;
+  min-height: 635px;
+  background-image: url(../images/world-map-dots.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  .slick-list {
+    min-height: 635px;
+  }
+  .slick-current {
+    .slider-dots_content {
+      display: block;
+      width: 285px;
+      padding: 28px 31px 0 32px;
+    }
+  }
+}
+
+.slider-dots_content-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.slider-dots_content-item {
+  text-align: center;
+  img {
+    margin-bottom: 7px;
+    display: inline-block;
+  }
+}
+
+.slider-dots_content-number {
+  font-weight: 800;
+  line-height: 23px;
+}
+.slider-dots_content-name {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.slider-dots_content-tile {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+
+    background-color: $green;
+  }
+}
+.slider-dots_content-subtile {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.slider-dots_content_link {
+  padding-top: 4px;
+}
+
+.slider-dots_circle {
+  width: 23px;
+  height: 23px;
+  background-color: $green;
+  border-radius: 50%;
+}
+.slider-dots_content {
+  display: none;
+  position: absolute;
+  background: rgba(#0f1010, 0.5);
+  border-radius: 6px;
+  position: absolute;
+  bottom: 35px;
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid $green;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    bottom: -21px;
+    left: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.slider-dots {
+  position: relative;
+}
+.slider-dots--1 {
+  top: 335px;
+  left: 0;
+  .slider-dots_content {
+    transform: translateX(0);
+    &::before {
+      left: 0;
+    }
+  }
+}
+.slider-dots--2 {
+  top: 290px;
+  left: 0px;
+  .slider-dots_circle {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/mini-marker.png);
+      background-size: cover;
+      width: 14px;
+      height: 17px;
+      top: -20px;
+      right: -14px;
+    }
+  }
+}
+
+.slider-dots--3 {
+  top: 315px;
+  left: 35px;
+}
+.slider-dots--4 {
+  top: 500px;
+  left: -50px;
+}
+
+.slider-dots--5 {
+  top: 220px;
+  left: -66px;
+}
+.slider-dots--6 {
+  top: 560px;
+  left: -122px;
+}
+.slider-dots--7 {
+  top: 377px;
+  right: 96px;
+}
+.slider-dots--8 {
+  top: 487px;
+  right: -33px;
+  .slider-dots_content {
+    transform: translateX(-262px);
+    &::before {
+      left: auto;
+      right: 0;
+    }
   }
 }
 
