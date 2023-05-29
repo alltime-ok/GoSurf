@@ -198,13 +198,6 @@
   }
 }
 
-.surf,
-.travel,
-.sleep,
-.shop {
-  padding: 160px 0 210px;
-}
-
 .surf {
   background-image: url(../images/surf-bg.png);
   background-repeat: no-repeat;
@@ -459,6 +452,12 @@
       right: 0;
     }
   }
+}
+
+.travel {
+  background-image: url(../images/cocktail.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 @import "media";
