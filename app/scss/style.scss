@@ -454,7 +454,7 @@
   }
 }
 
-.travel {
+.holder {
   background-image: url(../images/cocktail.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -464,7 +464,7 @@
   }
 }
 
-.travel-slider {
+.holder-slider {
   &_head {
     background-repeat: no-repeat;
     background-position: top left;
@@ -492,18 +492,18 @@
   }
 }
 
-.travel-slider_info {
+.holder-slider_info {
   display: flex;
   justify-content: space-around;
 }
-.travel-slider_info-item {
+.holder-slider_info-item {
   min-height: 200px;
   margin-bottom: 66px;
   padding-top: 0;
   position: relative;
 }
 
-.travel-slider_info-subtitle {
+.holder-slider_info-subtitle {
   font-size: 18px;
   line-height: 22px;
   opacity: 0.5;
@@ -517,7 +517,7 @@
   white-space: nowrap;
   text-align: right;
 }
-.travel-slider_info-title {
+.holder-slider_info-title {
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
