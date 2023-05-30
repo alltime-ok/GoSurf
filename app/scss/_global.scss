@@ -36,6 +36,26 @@ a {
   }
 }
 
+.headline-right {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-right: 103px;
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    right: 0;
+    top: 50%;
+  }
+}
+
 .title {
   span {
     font-weight: 800;
@@ -72,6 +92,10 @@ a {
   padding: 160px 0 210px;
 }
 
+.travel {
+  padding-bottom: 265px;
+}
+
 .subtitle {
   display: inline-block;
   text-align: right;
@@ -81,6 +105,17 @@ a {
     font-size: 40px;
     padding-right: 10px;
 
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+.descr {
+  display: inline-block;
+  &_head {
+    font-weight: 800;
+    font-size: 40px;
     span {
       font-weight: 100;
     }
