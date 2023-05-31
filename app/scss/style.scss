@@ -476,10 +476,31 @@
     margin-top: -230px;
     min-height: 320px;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: right center;
+
+    .descr_head {
+      position: relative;
+      padding-right: 220px;
+    }
+    .descr_head-logo {
+      padding-right: 70px;
+    }
     img {
-      padding-left: 24px;
-      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: -4px;
+    }
+    .holder_star-list {
+      position: absolute;
+      right: 0;
+      top: -4px;
+      li {
+        display: inline-block;
+        margin-left: -23px;
+      }
+      img {
+        position: static;
+      }
     }
   }
   &_subtitle {
@@ -522,6 +543,7 @@
   font-size: 40px;
   line-height: 36px;
   padding-left: 40px;
+  position: relative;
   span {
     font-weight: 400;
     font-size: 14px;
