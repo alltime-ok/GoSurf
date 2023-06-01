@@ -458,6 +458,9 @@
   background-image: url(../images/cocktail.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  &.sleep {
+    background-image: url(../images/flower-big.png);
+  }
   .slider-arrows {
     top: 235px;
     opacity: 0.5;
@@ -544,7 +547,7 @@
   line-height: 36px;
   padding-left: 40px;
   position: relative;
-  span {
+  .holder-pricing_span {
     font-weight: 400;
     font-size: 14px;
     line-height: 0;
