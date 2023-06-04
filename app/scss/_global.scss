@@ -211,3 +211,12 @@ input[type="number"] {
   position: absolute;
   right: 30px;
 }
+
+.star-list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: -25px;
+    }
+  }
+}

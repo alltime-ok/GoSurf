@@ -458,6 +458,8 @@
   background-image: url(../images/cocktail.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  position: relative;
+
   &.sleep {
     background-image: url(../images/flower-big.png);
   }
@@ -480,14 +482,16 @@
     min-height: 320px;
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: contain;
 
     .descr_head {
       position: relative;
-      padding-right: 220px;
-    }
-    .descr_head-logo {
       padding-right: 70px;
+      &.descr_head-sleep {
+        padding-right: 215px;
+      }
     }
+
     img {
       position: absolute;
       right: 0;
@@ -497,10 +501,7 @@
       position: absolute;
       right: 0;
       top: -4px;
-      li {
-        display: inline-block;
-        margin-left: -23px;
-      }
+
       img {
         position: static;
       }
@@ -559,6 +560,86 @@
     bottom: 153px;
     right: 0;
   }
+}
+
+.shop {
+  background-image: url(../images/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.shop_slider {
+  padding-left: 132px;
+}
+.shop_slider-inner {
+  display: flex;
+}
+.shop_slider-info {
+  max-width: 480px;
+  margin-right: 40px;
+  width: 100%;
+  padding-top: 150px;
+}
+.descr_head-shop {
+  max-width: 340px;
+  margin-bottom: 47px;
+}
+.shop_star-list {
+  margin-left: -15px;
+  margin-bottom: -20px;
+}
+.shop_slider-price {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 64px;
+  sup {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+}
+
+.shop_slider-content {
+  padding-left: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop_extras {
+  padding-left: 150px;
+}
+.shop_extras-inner {
+  display: flex;
+  justify-content: space-around;
+}
+.shop_extras-title {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.shop_extras-box {
+  text-align: center;
+  margin-right: 57px;
+}
+.shop_extras-img {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+.shop_extras-name {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+.shop_extras-price {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px;
 }
 @import "media";
 
