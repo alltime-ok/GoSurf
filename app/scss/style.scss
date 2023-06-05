@@ -569,6 +569,9 @@
 }
 .shop_slider {
   padding-left: 132px;
+  .slider-arrows {
+    opacity: 0.5;
+  }
 }
 .shop_slider-inner {
   display: flex;
@@ -640,6 +643,113 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 40px;
+}
+
+.surfboard {
+  position: relative;
+}
+.surfboard-box {
+  position: absolute;
+}
+
+.surfboard-box_position--1 {
+  right: 30px;
+  top: 170px;
+}
+.surfboard-box_position--2 {
+  top: 250px;
+  left: -8px;
+}
+.surfboard-box_position--3 {
+  bottom: 55px;
+  left: 45px;
+  .surfboard-box_content {
+    padding-left: 0;
+    padding-right: 104px;
+    top: -15px;
+    left: -365px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #ffffff;
+      right: 0;
+      left: auto;
+      top: 50%;
+    }
+  }
+}
+
+.surfboard-box_circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ffffff;
+  cursor: pointer;
+  &.active {
+    .circle-row {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    & + .surfboard-box_content {
+      display: block;
+    }
+  }
+}
+.circle-row {
+  background-color: $green;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  & + .circle-row {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.surfboard-box_content {
+  display: none;
+  position: absolute;
+  width: 359px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 104px;
+  top: -15px;
+  left: 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    left: -10px;
+    top: 50%;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 285px 0 34px;
+  .btn {
+    margin-bottom: 35px;
+    span {
+      padding: 17px 17px 15px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+.footer_copy {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  opacity: 0.5;
 }
 @import "media";
 
