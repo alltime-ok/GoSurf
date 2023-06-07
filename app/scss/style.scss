@@ -103,7 +103,7 @@
   height: 100vh;
   text-align: center;
 }
-.hader_title {
+.header_title {
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
@@ -160,7 +160,8 @@
   line-height: 14px;
   letter-spacing: 1.05px;
   position: relative;
-  padding-left: 19px;
+  padding: 0 19px 0 19px;
+
   text-transform: capitalize;
   &::before {
     position: absolute;
