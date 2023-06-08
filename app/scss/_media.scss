@@ -86,9 +86,70 @@
     display: none;
   }
   .menu {
-    display: none;
+    background-color: black;
+    z-index: 22;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    transition: all 0.5s ease;
+    &.active {
+      transform: translateX(0%);
+    }
   }
   .header_search {
     padding: 40px 15px 15px;
   }
+  .slider-item_info {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    text-align: right;
+  }
+  .slider-item_info-text {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .headline-left {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 65px;
+  }
+  .slider-item_info-suptext {
+    margin-bottom: 5px;
+  }
+  .headline-left::before {
+    width: 50px;
+  }
+  .slider-item_info-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .slider-dotshead {
+    right: 0;
+    left: 10px;
+    margin: 0 auto;
+    bottom: 5px;
+  }
+  .dots-box {
+    width: 125px;
+  }
+  .dots-box_number {
+    font-size: 18px;
+  }
+  .dots-box_name {
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
 }
