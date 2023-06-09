@@ -130,9 +130,9 @@
   }
 }
 .menu-btn {
+  display: none;
   width: 60px;
   height: 60px;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -265,7 +265,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 750px;
   &_inner {
     min-height: 750px;
     background-color: rgba(#1c2121, 0.85);
