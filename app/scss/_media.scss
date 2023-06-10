@@ -92,7 +92,78 @@
     max-width: 1000px;
     min-height: 515px;
   }
+  .slider-map .slick-list {
+    min-height: 515px;
+  }
+  .slider-dots--1 {
+    top: 226px;
+    left: -13px;
+    .slider-dots_content {
+      transform: translateX(0);
+      &::before {
+        left: 0;
+      }
+    }
+  }
+  .slider-dots--2 {
+    top: 240px;
+    left: -6px;
+    .slider-dots_circle {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/mini-marker.png);
+        background-size: cover;
+        width: 14px;
+        height: 17px;
+        top: -20px;
+        right: -14px;
+      }
+    }
+  }
+
+  .slider-dots--3 {
+    top: 260px;
+    left: 15px;
+  }
+  .slider-dots--4 {
+    top: 406px;
+    left: -43px;
+  }
+
+  .slider-dots--5 {
+    top: 169px;
+    left: -57px;
+  }
+  .slider-dots--6 {
+    top: 450px;
+    left: -96px;
+  }
+  .slider-dots--7 {
+    top: 322px;
+    right: 80px;
+  }
+  .slider-dots--8 {
+    top: 407px;
+    right: -28px;
+    .slider-dots_content {
+      transform: translateX(-262px);
+      &::before {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
 }
+@media (max-width: 1102px) {
+  .slider-dots_content {
+    &::before {
+      left: calc(50% - 0px);
+    }
+  }
+}
+
 @media (max-width: 1040px) {
   .header_arrows {
     display: none;
