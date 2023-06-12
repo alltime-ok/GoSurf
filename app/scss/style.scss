@@ -262,9 +262,11 @@
 }
 
 .surf-box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &_wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   &_inner {
     min-height: 750px;
     background-color: rgba(#1c2121, 0.85);

@@ -11,6 +11,12 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: ".header_slider",
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick",
+      },
+    ],
   });
 
   $(".surf-slider").slick({
@@ -19,10 +25,18 @@ $(function () {
     prevArrow: '<img class="slider-arrows slider-arrows_left" src="images/src/arrow-left.svg" alt="arrow" />',
     nextArrow: '<img class="slider-arrows slider-arrows_right" src="images/src/arrow-right.svg" alt="arrow" />',
     asNavFor: ".slider-map",
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
 
   $(".slider-map").slick({
-    slidesToShow: 8,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     asNavFor: ".surf-slider",
